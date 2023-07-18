@@ -1,1 +1,40 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  overflow: hidden;
+}
 
+.background img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  animation: scrollBackground 10s linear infinite;
+}
+
+.foreground {
+  position: absolute;
+  top: 95%;
+  left: 45.5%;
+
+  transform: translate(-95%, -45.5%);
+}
+
+#ship {
+  width: 10vw;
+
+  position: absolute;
+}
+
+@keyframes scrollBackground {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50%);
+  }
+}
